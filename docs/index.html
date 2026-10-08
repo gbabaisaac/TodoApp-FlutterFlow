@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Isaac's Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header><div class="brand"><span class="logo">IG</span><span>Isaac's Tasks</span></div><div class="profile">Providence · <strong>Isaac</strong></div></header>
+    <main>
+      <section class="hero"><span class="eyebrow">MY TASKS</span><h1>Make today count.</h1><p>Add a task, focus on one thing, and keep moving.</p></section>
+      <section class="composer"><input id="taskInput" aria-label="New task" placeholder="What needs to be done?"><button id="addButton">+ Add task</button></section>
+      <section class="stats"><div><strong id="remaining">0</strong><span>remaining</span></div><div><strong id="completed">0</strong><span>completed</span></div><div class="filters"><button class="active" data-filter="all">All</button><button data-filter="open">Open</button><button data-filter="done">Done</button></div></section>
+      <ul id="taskList" aria-live="polite"></ul>
+      <section class="quote"><div class="quote-mark">“</div><div><p id="quoteText">Finding a thought for your day…</p><span id="quoteAuthor">Zen Quotes</span></div><button id="refreshQuote" aria-label="Refresh quote">↻</button></section>
+    </main>
+    <footer>CSC 305 · Week 5 Agile Revision · Powered by Zen Quotes</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
